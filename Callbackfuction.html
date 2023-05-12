@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CallBack Function</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        // add function is a callback function with name dispaly
+        function add(a, b, myCallbackfunc) {
+            var c = a + b;
+            myCallbackfunc(c);
+        }
+        function display(c) {
+            document.getElementById("d1").innerHTML = "Addition is " + c;
+        }
+
+
+        add(10, 20, display);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        var colors = ["Red", "Green", "Blue", "Orange"];
+        // add the element at the last
+        colors.push("Yellow");
+
+        // add the element at the first position
+        colors.unshift("White");
+
+        colors.pop(); // removes the last element
+
+        colors.shift(); // removes the first element
+
+        colors.splice(1, 0, "Pink", "Purple"); //insert the 2 elements at 1st index
+        var list = colors.slice(2, 6);  // 5-1= 4
+
+        colors.sort();
+        colors.reverse();
+        console.log(colors);
+        console.log(list);
+    </script>
+
+</body>
+</html>

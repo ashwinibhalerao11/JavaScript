@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Student Array</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        var students =
+            [
+                { rollNo: 1, name: 'Ashwini', city: 'Pune', percentage: 80 },
+                { rollNo: 2, name: 'Pratik', city: 'Pune', percentage: 85 },
+                { rollNo: 3, name: 'Priyanka', city: 'Pune', percentage: 70 },
+                { rollNo: 4, name: 'Mayur', city: 'Hingoli', percentage: 80 },
+                { rollNo: 5, name: 'Vaibhav', city: 'Nashik', percentage: 80 },
+            ];
+        var data = "<table border='1'><tr><th>RollNo</th><th>Name</th><th>City</th><th>Percentage</th></tr>";
+        for (var i = 0; i < students.length; i++) {
+            data += "<tr><td>" + students[i].rollNo + "</td><td>" + students[i].name + "</td><td>" +
+                students[i].city + "</td><td>" + students[i].percentage + "</td></tr>";
+        }
+        data += "</table>";
+        document.getElementById("d1").innerHTML = data;
+
+    </script>
+</body>
+</html>

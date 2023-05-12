@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Object in Javascript</title>
+</head>
+<body>
+    <script>
+        var stud = {};
+        var Student = {
+            firstname: 'Ashwini',
+            lastname: 'Bhalerao',
+            city: 'Pune',
+            obtainedmaks: 483,
+            totalMarks: 500,
+            isplay: function () {
+                return this.firstname + " " + this.lastname + " " + this.city + " " + this.obtainedmarks + " " + this.totalmarks + " " + this.totalmarks1();
+            },
+            totalmarks1: function () {
+                var marks = this.obtainedmarks / this.totalmarks;
+
+                return percentage = marks * 100;
+
+            }
+
+        }
+        console.log(Student.totalmarks1());
+        console.log(Student.display());
+       
+    </script>
+</body>
+</html>

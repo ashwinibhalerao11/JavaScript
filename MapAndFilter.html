@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Map Ad Filter Functions</title>
+</head>
+<body>
+    <script>
+        var nums = [11, 22, 33, 44, 55];
+        nums.forEach(display);
+
+        var result = nums.map(test);
+        console.log(result);
+
+        var res = nums.filter(test2);
+        console.log(res);
+
+        function test2(no) {
+            if (no % 2 == 0) {
+                return no;
+            }
+        }
+
+        function test(no) {
+            no * 2;
+        }
+        function display(no) {
+            console.log(no);
+        }
+    </script>
+</body>
+</html>
